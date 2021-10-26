@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Advansed Lesson 6</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <form name="sign_up_block" class="sign_up_block">
+            <div class="header">Please sign up</div>
+            <input type="text" id="first_name" placeholder=" First name" pattern="^[a-zA-Z]{2,20}$" required>
+            <input type="text" id="last_name" placeholder=" Last name" pattern="^[a-zA-Z]{2,20}$" required>
+            <input type="email" id="email_address" placeholder=" Email address" pattern="^[a-z0-9_.&#]+[^\s@]+@[^\s@]+[.][^\s@\W]{1,3}$" required>
+            <input type="password" id="password" placeholder=" Password" pattern="^[a-zA-Z0-9]{8,15}$" required>
+            <input type="submit" id="sign_up" value="Sign Up" disabled>
+            <div class="sign_in">Sign in now</div>
+        </form>
+        <form name="sign_in_block" class="sign_in_block hide">
+            <div class="header">Please sign in</div>
+            <input type="email" id="registered_email" placeholder=" Email address" required>
+            <input type="password" id="registered_password" placeholder=" Password" required>
+            <input type="submit" id="sign_in" value="Sign In">
+            <div class="sign_up">Sign up now</div>
+        </form>
+        <div class="user_block hide" >
+            <div class="user_foto"></div>
+            <div class="user_name user_last_name">Some Name</div>
+            <div class="user_email">some@mail</div>
+            <div class="user_position">Front-end Developer</div>
+            <input type="button" id="sign_out" value="Sign Out">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
